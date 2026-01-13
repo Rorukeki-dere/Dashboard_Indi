@@ -384,5 +384,23 @@ html_payload = r'''<!doctype html>
       </div>
     </div>
 
+# ... (resto de tu código anterior) ...
 
+    # Cierre de las etiquetas HTML que faltaban en tu código original
+    html_payload += r'''
+      <script>
+        // Aquí iría la lógica de JS para los gráficos y filtros
+        // (El código que pasaste no tenía la lógica JS, solo el inicio)
+        console.log("Dashboard cargado");
+      </script>
+    </body>
+    </html>
+    '''
+
+    # Esta es la parte clave: Guardar el archivo como index.html
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_payload)
+        
+    print("Archivo index.html generado con éxito.")
     < <
+
